@@ -17,17 +17,21 @@ To solve this challenge we will use a **Greedy Algorithm**.
 
 
 Click [here](https://leetcode.com/problems/jump-game/description/) for the question on Leetcode.
+
 Click [here](https://www.youtube.com/watch?v=Yan0cv2cLy8) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
 
 ### Example 1:
 Input: `nums = [2, 3, 1, 1, 4]`
+
 Output: `true`
+
 Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 
 ### Example 2:
-Input: `nums = [3, 2, 1, 0, 4]
-Output: `fasle`
+Input: `nums = [3, 2, 1, 0, 4]`
+
+Output: `false`
 
 
 ## Python Solution
