@@ -51,10 +51,10 @@ class Solution:
 
 ## JavaScript Solution
 ```
-var canJump = (nums, right = nums.length - 1) {
+var canJump = (nums, right = nums.length - 1) => {
     for (let index = right; 0 <=index; index--) {
         const isJumpable = right <= (index + nums[index]);
-        if (isJumpable) right = i;
+        if (isJumpable) right = index;
     }
 
     return right === 0;
