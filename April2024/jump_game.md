@@ -62,3 +62,21 @@ var canJump = (nums, right = nums.length - 1) => {
 
 // Code comments can be found in jump_game.js
 ```
+
+## Go Solution
+```
+func canJump(nums []int) bool {
+	goal := len(nums) - 1
+
+	for index := len(nums) - 2; index >= 0; index-- {
+
+		if index+nums[index] >= goal {
+			goal = index
+		}
+	}
+
+	return goal == 0
+}
+
+// Code comments can be found in jump_game.go
+```
