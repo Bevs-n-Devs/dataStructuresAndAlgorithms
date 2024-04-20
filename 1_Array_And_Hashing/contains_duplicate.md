@@ -13,7 +13,7 @@ and return `false` if every element is distinct.
 *If any number appears in the list more than once, then you should return `true`.*
 *However, if there are no duplicates return `false`.*
 
-To solve this challenge we will use a **Hash Set**.
+To solve this challenge we will use a **Hash Set** in the Python solution, and a **Pointer** solution for JavaScript and Go.
 
 Click [here](https://leetcode.com/problems/contains-duplicate/description/) for the question on Leetcode.
 
@@ -60,4 +60,24 @@ for (let right = 0; right < nums.length; right++) {
 return false;
 
 // Code comments can be found in contains_duplicate.js
+```
+
+## Go Solution
+```
+var isDuplicate bool
+
+for right := 0; right < len(nums); right++ {
+    for left := 0; left < right; left++ {
+        if nums[left] == nums[right] {
+            isDuplicate = true
+            break
+        }
+    }
+    if isDuplicate {
+        break
+    }
+}
+return isDuplicate
+
+// Code comments can be found in contains_duplicate.go
 ```
