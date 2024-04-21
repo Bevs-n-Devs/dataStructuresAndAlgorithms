@@ -43,7 +43,7 @@ class Stack {
          * 
          * @param value the value that the newly added Node will store.
         */
-        void add (int value) {
+        void push (int value) {
             Node* temp = new Node(value);
             temp->next = this->top;
             this->top = temp;
@@ -119,7 +119,7 @@ int main () {
     std::cout << "===========================================================" << std::endl;
     Stack* stack = new Stack(1);
     for (int i = 2; i < 6; i++) {
-        stack->add(i);
+        stack->push(i);
     }
 
     stack->printStack();
