@@ -13,7 +13,7 @@ and return `false` if every element is distinct.
 *If any number appears in the list more than once, then you should return `true`.*
 *However, if there are no duplicates return `false`.*
 
-To solve this challenge we will use a **Hash Set** in the Python solution, and a **Pointer** solution for JavaScript and Go.
+To solve this challenge we will use a **[Hash Set](https://medium.com/@abasaeed/understanding-hash-maps-hash-tables-and-hash-sets-in-python-c0a78b1e131)** in the Python solution, and a **Pointer** solution for JavaScript and Go.
 
 Click [here](https://leetcode.com/problems/contains-duplicate/description/) for the question on Leetcode.
 
