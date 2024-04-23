@@ -36,7 +36,7 @@ func groupAnagrams(strs []string) [][]string {
 }
 
 func main() {
-	fmt.Println("Group Anagrams\n")
+	fmt.Println("Leetcode 49: Group Anagrams\n")
 
 	// Example 1
 	example1 := []string{"eat", "tea", "tan", "ate", "nat", "bat"}

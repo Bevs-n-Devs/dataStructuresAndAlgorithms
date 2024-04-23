@@ -20,10 +20,7 @@ Click [here](https://leetcode.com/problems/contains-duplicate/description/) for 
 Click [here](https://www.youtube.com/watch?v=3OamzN90kPg) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
 
-### Example 3:
-Input: `nums = [1,1,1,3,3,4,3,2,4,2]`
 
-Output: `true`
 
 ### Example 1:
 Input: `nums = [1,2,3,1]`
@@ -34,6 +31,11 @@ Output: `true`
 Input: `nums = [1,2,3,4]`
 
 Output: `false`
+
+### Example 3:
+Input: `nums = [1,1,1,3,3,4,3,2,4,2]`
+
+Output: `true`
  
 
 ## Python Solution

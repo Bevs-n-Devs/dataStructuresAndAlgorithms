@@ -14,12 +14,20 @@ class Solution:
 
 
 # implementaion
-example_1 = [1, 2, 3, 1]
+print("Leetcode 217: Contains Duplicate\n")
 answer = Solution()
-print(answer.containsDuplicate(nums=example_1))
 
+# Example 1
+example_1 = [1, 2, 3, 1]
+print(f"Example 1: nums = {example_1}")
+print("Output:", answer.containsDuplicate(example_1))
+
+# Example 2
 example_2 = [1, 2, 3, 4]
-print(answer.containsDuplicate(example_2))
+print(f"Example 2: nums = {example_2}")
+print("Output:", answer.containsDuplicate(example_2))
 
+# Example 3
 example_3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
-print(answer.containsDuplicate(example_3))
+print(f"Example 3: nums = {example_3}")
+print("Output:", answer.containsDuplicate(example_3))

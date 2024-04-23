@@ -29,14 +29,18 @@ func containsDuplicate(nums []int) bool {
 // implementation
 
 func main() {
+	fmt.Println("Leetcode 217: Contains Duplicate\n")
 
-	example_1 := []int{1, 2, 3, 1}
-	fmt.Println(containsDuplicate(example_1))
+	example1 := []int{1, 2, 3, 1}
+	fmt.Printf("Example 1: nums = %v\n", example1)
+	fmt.Println("Outcome:", containsDuplicate(example1))
 
-	example_2 := []int{1, 2, 3, 4}
-	fmt.Println(containsDuplicate(example_2))
+	example2 := []int{1, 2, 3, 4}
+	fmt.Printf("Example 2: nums = %v\n", example2)
+	fmt.Println("Outcome:", containsDuplicate(example2))
 
-	example_3 := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 1}
-	fmt.Println(containsDuplicate(example_3))
+	example3 := []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 1}
+	fmt.Printf("Example 3: nums = %v\n", example3)
+	fmt.Println("Outcome:", containsDuplicate(example3))
 
 }

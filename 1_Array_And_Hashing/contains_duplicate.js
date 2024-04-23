@@ -19,11 +19,19 @@ var containsDuplicate = function(nums) {
 
 
 // implementation
-const example_1 = [1, 2, 3, 1];
-console.log(containsDuplicate(example_1));
+console.log("Leetcode 217: Contains Duplicate\n");
 
-const example_2 = [1, 2, 3, 4];
-console.log(containsDuplicate(example_2));
+// Example 1
+const example1 = [1, 2, 3, 1];
+console.log(`Example 1: num = [${example1}]`);
+console.log("Output:", containsDuplicate(example1));
 
-const example_3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
-console.log(containsDuplicate(example_3));
+// Example 2
+const example2 = [1, 2, 3, 4];
+console.log(`Example 2: num = [${example2}]`);
+console.log("Output:", containsDuplicate(example2));
+
+// Example 3
+const example3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
+console.log(`Example 3: num = [${example3}]`);
+console.log("Output:", containsDuplicate(example3));

@@ -23,7 +23,7 @@ class Solution:
     
 
 # implementation
-print("Leetcode 41: Group Anagrams\n")
+print("Leetcode 49: Group Anagrams\n")
 answer = Solution()
 
 # Example 1
