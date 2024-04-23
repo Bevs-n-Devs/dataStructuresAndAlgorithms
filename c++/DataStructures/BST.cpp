@@ -95,7 +95,6 @@ class BinarySearchTree {
          * @param value value to search for
         */
         bool contains (int value) {
-            if (this->root == nullptr) return false;
             Node* temp = this->root;
             while (temp) {
                 if (temp->value == value) return true;
