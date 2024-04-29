@@ -12,10 +12,6 @@ Given a string `s`, return `true` if it a **palindrome**, or `false` otherwise.
 ***Break It Down For Me...***
 *You are given a string of word(s) and need to find out if we reverse the string, it will be spell the same word(s) in reverse order.*
 
-Click [here](https://leetcode.com/problems/longest-consecutive-sequence/) for the question on Leetcode.
-
-Click [here](https://www.youtube.com/watch?v=P6RZZMu_maU) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
-
 Click [here](https://leetcode.com/problems/valid-palindrome/description/) for the question on Leetcode.
 
 Click [here](https://www.youtube.com/watch?v=jJXJ16kPFWg) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
