@@ -22,7 +22,7 @@ class Solution:
 # implementation 
 answer = Solution()
 
-print("Leetcode 15: Container With Most Water\n")
+print("Leetcode 11: Container With Most Water\n")
 
 # Example 1
 example_1 = [1, 8, 6, 2, 5, 4, 8, 3, 7]

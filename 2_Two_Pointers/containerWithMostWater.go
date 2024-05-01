@@ -45,7 +45,6 @@ func min(a, b int) int {
 
 // implementation
 func main() {
-	fmt.Println("Hello world, hello Yaw!")
 	fmt.Println("Leetcode 11: Container With Most Water\n")
 
 	// Example 1

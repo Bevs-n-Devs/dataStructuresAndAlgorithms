@@ -36,7 +36,7 @@ var maxArea = function (height) {
 
 // implementation
 
-console.log("Leetcode 15: Container With Most Water\n");
+console.log("Leetcode 11: Container With Most Water\n");
 
 // Eaxmple 1
 example1 = [1, 8, 6, 2, 5, 4, 8, 3, 7];
