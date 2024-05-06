@@ -1,7 +1,7 @@
 Stack 4
 # Generate Parentheses
 ## Company: Amazon
-### Level: Mdeium
+### Level: Medium
 
 Given `n` pairs on parentheses, write a function to generate all combnations of well-formed parentheses.
 
