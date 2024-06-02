@@ -28,7 +28,7 @@ Click [here](https://leetcode.com/problems/car-fleet/description/) for the quest
 
 Click [here](https://www.youtube.com/watch?v=Pr6T-3yB9RM) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use a [Stack](https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/) and in Pythopn, JavaScript and Go.
+To solve this challenge we will use a [Stack](https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/) in Python, JavaScript and Go.
 
 ### Example 1
 ```

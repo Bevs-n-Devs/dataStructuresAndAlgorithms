@@ -22,7 +22,7 @@ Click [here](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/desc
 
 Click [here](https://www.youtube.com/watch?v=cQ1Oz4ckceM) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use the [Pointer method](https://www.studysmarter.co.uk/explanations/computer-science/computer-programming/pointers-and-arrays/#:~:text=C%20programming%20language%3F-,A%20pointer%20is%20a%20variable%20that%20stores%20the%20memory%20address,the%20efficiency%20of%20certain%20algorithms.) in Pythopn, JavaScript and Go.
+To solve this challenge we will use the [Pointer method](https://www.studysmarter.co.uk/explanations/computer-science/computer-programming/pointers-and-arrays/#:~:text=C%20programming%20language%3F-,A%20pointer%20is%20a%20variable%20that%20stores%20the%20memory%20address,the%20efficiency%20of%20certain%20algorithms.) in Python, JavaScript and Go.
 
 
 ### Eaxmple 1

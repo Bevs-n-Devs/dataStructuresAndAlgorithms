@@ -19,7 +19,7 @@ Click [here](https://leetcode.com/problems/binary-search/description/)for the qu
 
 Click [here](https://www.youtube.com/watch?v=s4DPM8ct1pI) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use a [Binary Search](https://www.geeksforgeeks.org/what-is-binary-search-algorithm/) and in Pythopn, JavaScript and Go.
+To solve this challenge we will use a [Binary Search](https://www.geeksforgeeks.org/what-is-binary-search-algorithm/) in Python, JavaScript and Go.
 
 ### Example 1
 ```

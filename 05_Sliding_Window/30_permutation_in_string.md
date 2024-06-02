@@ -17,7 +17,7 @@ Click [here](https://leetcode.com/problems/permutation-in-string/description/)fo
 
 Click [here](https://www.youtube.com/watch?v=UbyhOgBN834) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use a [Sliding Window](https://builtin.com/data-science/sliding-window-algorithm) and in Pythopn, JavaScript and Go.
+To solve this challenge we will use a [Sliding Window](https://builtin.com/data-science/sliding-window-algorithm)  in Python, JavaScript and Go.
 
 ### Example 1
 ```

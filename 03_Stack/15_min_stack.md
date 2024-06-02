@@ -28,7 +28,7 @@ Click [here](https://leetcode.com/problems/min-stack/) for the question on Leetc
 
 Click [here](https://www.youtube.com/watch?v=qkLl7nAwDPo) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use a [Stack](https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/) and [HashMap](https://stackoverflow.com/questions/2592043/what-is-a-hash-map-in-programming-and-where-can-it-be-used) in Pythopn, JavaScript and Go.
+To solve this challenge we will use a [Stack](https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/) and [HashMap](https://stackoverflow.com/questions/2592043/what-is-a-hash-map-in-programming-and-where-can-it-be-used) in Python, JavaScript and Go.
 
 ### Example 1
 ```

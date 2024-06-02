@@ -23,7 +23,7 @@ Click [here](https://leetcode.com/problems/koko-eating-bananas/description/)for 
 
 Click [here](https://www.youtube.com/watch?v=U2SozAs9RzA) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use a [Binary Search](https://www.geeksforgeeks.org/what-is-binary-search-algorithm/) and in Pythopn, JavaScript and Go.
+To solve this challenge we will use a [Binary Search](https://www.geeksforgeeks.org/what-is-binary-search-algorithm/) in Python, JavaScript and Go.
 
 ### Example 1
 ```

@@ -17,7 +17,7 @@ Click [here](https://leetcode.com/problems/reverse-nodes-in-k-group/description/
 
 Click [here](https://www.youtube.com/watch?v=1UOPsfP85V4) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use a [Linked List](https://www.geeksforgeeks.org/introduction-to-linked-list-data-structure-and-algorithm-tutorial/) and in Pythopn, JavaScript and Go.
+To solve this challenge we will use a [Linked List](https://www.geeksforgeeks.org/introduction-to-linked-list-data-structure-and-algorithm-tutorial/) in Python, JavaScript and Go.
 
 ### Example 1
 ```
