@@ -1,6 +1,6 @@
 Trees 2
 # Maximum Depth of Binary Tree
-## Company: Google
+## Company: Amazon
 ### Level: Easy
 
 Given the `root` of a binary tree, return its maximum depth.
