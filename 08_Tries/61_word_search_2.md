@@ -8,7 +8,11 @@ Given an `m x n` `board` of characters and a list of strings `words`, return all
 Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
 
 ***Break It Down For Me...***
-**
+*We have a board with letters, shaped like a rectangle (with `m` rows and `n` columns).*
+*We also need to find a list of words on the board.*
+*We need to find all the words from the list that we can make using the letters on the board.*
+*Each word must be made from letters that are next to each other, either horizontally or vertically (but not diagonally).*
+*We can only use each letter cell once per word.*
 
 Click [here](https://leetcode.com/problems/word-search-ii/description/)for the question on Leetcode.
 
