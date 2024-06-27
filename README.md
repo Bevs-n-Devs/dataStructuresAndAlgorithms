@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Data Structures & Algorithms (DSA)
 _This is going to be a repo full of data structure and algorithm challenges from Leetcode and from work._
 
@@ -33,29 +31,3 @@ Code Editor/IDE: [VS Code](https://code.visualstudio.com/) has been our most use
 #### C++
 * [GNU Compiler](https://gcc.gnu.org/)
 * [MSYS2](https://www.msys2.org/)
-=======
-# Leetcode Roadmap
-
-This branch is a mixture of data structures and algorithm challenges taken from [Leetcode](https://leetcode.com/).
-
-For each challange, you will find the title, the company which is associated with the challage 
-(*please bare in mind that these challenges are not exclusive to company that it's associated with*), 
-the difficulty level, an explanation of what the challenge is asking you and my solution along with a video soultion from YouTube.
-
-This will be completed as I progress into my career and revisited as much as possible throught my career.
-It always reccomended to do this whether you are a beginner or an expert, so you keep trying to find new ways to improve 
-and eventually become more a profficient software developer/engineer.
-
-Most challenges will be done in *Python, JavaScript and Go*.
->>>>>>> origin/Leetcode-Roadmap
-=======
-# BMC Dev Hub Challenges.
-
-Every two weeks the backend Dev Hub team for *[Benchmark Management Consultancy Limited](https://www.benchmarkmanagementconsulting.com/)* get together 
-to solve a coding challenge togethe, that a colleague selected at random.
-
-There are markdown files with the explanation of the challenge, along with separate files of the solution
-and it being implemented in various languages such as Python, JavaScript and Go.
-
-Most challenges you can find from **[Plurasight](https://www.pluralsight.com/)** or **[Leetcode](https://leetcode.com/)**.
->>>>>>> origin/BMC-DevHub-Challenges
