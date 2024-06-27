@@ -10,6 +10,17 @@ enum ALGOS {
 ALGOS ALGO = BUBBLE;
 bool recursion = false; 
 
+void insertion_sort(int arr[], int N) {
+    if (N <= 1) {
+        return;
+    }
+
+    int idx = 0;
+    for (int i = idx; i < N; i++) {
+        
+    }
+}
+
 /**
  * Uses the bubble sort alorithm to sort arrays
  * 
