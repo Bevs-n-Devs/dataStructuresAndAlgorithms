@@ -18,9 +18,9 @@ We want the kth biggest number if we arranged the list from biggest to smallest.
 We don't care if some numbers are the same (not distinct).
 Try to solve the problem without sorting the entire list.*
 
-Click [here]()for the question on Leetcode.
+Click [here](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)for the question on Leetcode.
 
-Click [here]() for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
+Click [here](https://www.youtube.com/watch?v=XEmy13g1Qxc) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
 To solve this challenge we will use a [Heap](https://www.studysmarter.co.uk/explanations/computer-science/data-structures/heap-data-structure/#:~:text=A%20heap%20data%20structure%20is%20a%20type%20of%20binary%20tree,priority%20queues%2C%20or%20scheduling%20programs.) data structure in Python, JavaScript and Go.
 
