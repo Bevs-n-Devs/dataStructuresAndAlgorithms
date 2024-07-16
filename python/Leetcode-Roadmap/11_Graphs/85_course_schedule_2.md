@@ -23,7 +23,7 @@ Click [here](https://leetcode.com/problems/course-schedule-ii/description/)for t
 
 Click [here](https://www.youtube.com/watch?v=Akt3glAwyfY) for the solution on [Neetcode](https://neetcode.io/) **(which I would strongly reccomed you to get familiar with.)**
 
-To solve this challenge we will use [Graphs](https://www.simplilearn.com/tutorials/data-structure-tutorial/graphs-in-data-structure#:~:text=Graphs%20in%20data%20structures%20are,circuit%20networks%2C%20and%20social%20networks.) as a data structure in Python & JavaScript.
+To solve this challenge we will use [Graphs](https://www.simplilearn.com/tutorials/data-structure-tutorial/graphs-in-data-structure#:~:text=Graphs%20in%20data%20structures%20are,circuit%20networks%2C%20and%20social%20networks.) as a data structure in Python, JavaScript & Go.
  
 
 ### Example 1:
@@ -162,7 +162,7 @@ const CRS = 0
 const PRE = 1
 
 func findOrder(numCourses int, prerequisites [][]int) []int {
-    // Initialize the adjacency list for prerequisites
+    // Initialize the adjacency list for prerequisites€
     prereq := make([][]int, 0)
     for i := 0; i < numCourses; i++ {
         prereq = append(prereq, make([]int, 0))
