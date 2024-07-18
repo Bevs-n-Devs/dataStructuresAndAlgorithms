@@ -72,7 +72,7 @@ class Solution:
         return len(set(dsu.findParent(x) for x in range(n)))
 ```
 
-## JavaScrip
+## JavaScript
 ```
 var countComponents = function (n, edges, count = 0) {
     // Build the graph and initialize the visited array
