@@ -1,4 +1,4 @@
-1-Dymanic Programming 2
+1-Dymanic Programming 3
 # House Robber 2
 ## Company: Google
 ### Level: Medium 
