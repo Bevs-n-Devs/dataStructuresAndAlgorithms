@@ -1,4 +1,4 @@
-1-Dymanic Programming 4
+1-Dymanic Programming 5
 # Longest Palendromic Substring
 ## Company: Google
 ### Level: Medium
@@ -68,13 +68,13 @@ var longestPalindrome = (s) => {
     // Check if the string is empty
     const isEmpty = s.length === 0;
     if (isEmpty) return '';
-
+  
     // Search for the longest palindrome
     const [ left, right ] = search(s);/* Time O(N * N) */
 
     // Return the longest palindromic substring
     return s.slice(left, (right + 1));/* Time O(N * N) | Ignore Auxillary Space (N) */
-}
+}1111
 
 // Function to search for the longest palindrome
 const search = (s, left = 0, right = 0) => {
