@@ -161,4 +161,13 @@ void printArray_Int(int *arr, int N);
  */
 void printArray_Chr(char *arr, int N);
 
+/**
+ * Prints a Matrix of Integers
+ * 
+ * @param matrix : the 2 dimensional array of integers
+ * @param w : width of the matrix (number of columns/number of internal elements of each internal array)
+ * @param h : height of the matrix (number of rows/internal arrays) 
+ */
+void printMatrix_Int(int **matrix, int w, int h);
+
 #endif
