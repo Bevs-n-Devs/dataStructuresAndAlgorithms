@@ -1,4 +1,5 @@
 #include "utils.h"
+#include <climits>
 
 LListNode::LListNode(int v) {
     this->value = v;
@@ -11,8 +12,17 @@ LListNode::LListNode(int v, int n) {
 }
 
 LListNode::LListNode(std::vector<int> vals) {
-    this->value = vals[0];
-    this->next = new LListNode({vals.begin()+1,vals.end()});
+    if (!vals.size()) {
+        return;
+    }
+    
+    if (vals.size() == 1) {
+        this->value = vals[0];
+        this->next = nullptr;
+    } else {
+        this->value = vals[0];
+        this->next = new LListNode({vals.begin()+1,vals.end()});
+    }
 }
 
 void LListNode::print() {
@@ -20,6 +30,7 @@ void LListNode::print() {
     LListNode* nxt = this->next;
     while (nxt) {
         std::cout << "->" << nxt->value;
+        nxt = nxt->next;
     }
     std::cout << "]";
 }
@@ -47,6 +58,7 @@ void DLListNode::print() {
     DLListNode* nxt = this->next;
     while (nxt) {
         std::cout << "->" << nxt->value;
+        nxt = nxt->next;
     }
     std::cout << "]";
 }
