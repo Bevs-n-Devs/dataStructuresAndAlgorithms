@@ -170,4 +170,13 @@ void printArray_Chr(char *arr, int N);
  */
 void printMatrix_Int(int **matrix, int w, int h);
 
+/**
+ * Prints a Vector Matrix of Integers
+ * 
+ * @param matrix : the 2 dimensional vector of integers
+ * @param w : width of the matrix (number of columns/number of internal elements of each internal array)
+ * @param h : height of the matrix (number of rows/internal arrays) 
+ */
+void printMatrix_Vector_Int(std::vector<std::vector<int>> matrix);
+
 #endif

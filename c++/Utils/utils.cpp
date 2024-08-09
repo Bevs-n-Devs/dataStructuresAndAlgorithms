@@ -120,3 +120,16 @@ void printMatrix_Int(int **matrix, int w, int h) {
     
     std::cout << "\t]\n";
 }
+
+void printMatrix_Vector_Int(std::vector<std::vector<int>> matrix) {
+    std::cout << "\t[\n";
+    for (int row=0;row<matrix.size();row++) {
+        for (int col=0;col<matrix[0].size();col++){
+            if (!col) std::cout << "\t\t[" << matrix[row][col];
+            else std::cout << "," << matrix[row][col];
+        }
+        std::cout << "]\n";
+    }
+    
+    std::cout << "\t]\n";
+}
