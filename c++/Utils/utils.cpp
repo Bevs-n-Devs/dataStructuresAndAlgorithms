@@ -64,46 +64,51 @@ void DLListNode::print() {
 }
 
 void printVector_Chr(std::vector<char> v) {
-    std::cout << "[" << *v.begin();
+    std::cout << "[";
     
-    for(int i=1; i<v.size();i++) {
-        std::cout << "," << v[i];
+    for(int i=0; i<v.size();i++) {
+        if (!i) std::cout << v[i];
+        else std::cout << "," << v[i];
     }
     std::cout << "]";
 }
 
 void printVector_Int(std::vector<int> v) {
-    std::cout << "[" << *v.begin();
+    std::cout << "[";
     
-    for(int i=1; i<v.size();i++) {
-        std::cout << "," << v[i];
+    for(int i=0; i<v.size();i++) {
+        if (!i) std::cout << v[i];
+        else std::cout << "," << v[i];
     }
     std::cout << "]";
 }
 
 void printVector_Str(std::vector<char*> v) {
-    std::cout << "[" << *v.begin();
+    std::cout << "[";
     
-    for(int i=1; i<v.size();i++) {
-        std::cout << "," << v[i];
+    for(int i=0; i<v.size();i++) {
+        if (!i) std::cout << v[i];
+        else std::cout << "," << v[i];
     }
     std::cout << "]";
 }
 
 void printArray_Int(int* arr, int N) {
-    std::cout << "[" << arr[0];
+    std::cout << "[";
     
-    for(int i=1; i<N;i++) {
-        std::cout << "," << arr[i];
+    for(int i=0; i<N;i++) {
+        if (!i) std::cout << arr[i];
+        else std::cout << "," << arr[i];
     }
     std::cout << "]";
 }
 
 void printArray_Chr(char* arr, int N) {
-    std::cout << "[" << arr[0];
+    std::cout << "[";
     
-    for(int i=1; i<N;i++) {
-        std::cout << "," << arr[i];
+    for(int i=0; i<N;i++) {
+        if (!i) std::cout << arr[i];
+        else std::cout << "," << arr[i];
     }
     std::cout << "]";
 }
