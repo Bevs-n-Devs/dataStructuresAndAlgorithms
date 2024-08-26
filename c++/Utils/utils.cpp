@@ -35,6 +35,47 @@ void LListNode::print() {
     std::cout << "]";
 }
 
+LList::LList(LListNode* node){
+    head = node;
+    
+    if(head) size = 1;
+    if (!head->next) {
+        tail = head;
+        return;
+    }
+
+    LListNode* nxt = this->head->next;
+    while (nxt) {
+        size++;
+        if (!nxt->next) {
+            tail = nxt;
+            break;
+        }
+        nxt = nxt->next;
+    }
+
+}
+
+void LList::printLLst(){
+    std::cout << "[";
+    LListNode* tmp = head;
+    if (size == 1) {
+        std::cout << tmp->value << "]";
+        return;
+    }
+    while (tmp) {
+        if (tmp == head) std::cout << tmp->value;
+        else std::cout << "->" << tmp->value;
+        
+        tmp = tmp->next;
+        if(tmp == tail) {
+            std::cout << "->" << tmp->value;
+            break;
+        }
+    }
+    std::cout << "]";
+}
+
 DLListNode::DLListNode(int v) {
     this->value = v;
     this->next = nullptr;

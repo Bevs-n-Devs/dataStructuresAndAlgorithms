@@ -96,6 +96,25 @@ struct DLListNode {
     void print();
 };
 
+struct LList {
+    LListNode* head;
+    LListNode* tail;
+    int size;
+
+    /**
+     * LList Constructor
+     * 
+     * @param head: LListNode 
+     * 
+     */
+    LList(LListNode* head);
+
+    /**
+     * Prints the Llist values
+     */
+    void printLLst();
+};
+
 struct BinaryTreeNode {
     int data;
     BinaryTreeNode* left;
