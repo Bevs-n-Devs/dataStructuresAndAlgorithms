@@ -134,14 +134,37 @@ struct BinaryTreeNode {
      * @param n: integer value for the next node to store
      */
     BinaryTreeNode(int v, int n);
+};
+
+/**
+ * Binary Tree of Nodes
+ */
+struct BinaryTree{
+
+    // root of the binary tree
+    BinaryTreeNode* root;
 
     /**
-     * Creates Doubly Linked List with initial value
+     * Creates Binary Tree with array of values
      * 
-     * @param v: integer value for the main node to store
-     * @param vals: vector of integer values for the remaining nodes to store
+     * @param arr : Integer array to create binary tree
+     * @param N : number of elements in array
+     * 
      */
-    BinaryTreeNode(int v, std::vector<int> vals);
+    BinaryTree(int* arr, int N);
+
+    /**
+     * Creates Binary Tree with array of values
+     * 
+     * @param vec : Integer vector to create binary tree
+     * 
+     */
+    BinaryTree(std::vector<int> vec);
+
+    /**
+     * Prints all nodes in the binary tree
+     */
+    void print();
 };
 
 /**
@@ -176,10 +199,18 @@ void printArray_Int(int *arr, int N);
 /**
  * Prints Array of Characters
  * 
- * @param v: Array of characters
+ * @param arr: Array of characters
  * @param N: Number of elements in the array
  */
 void printArray_Chr(char *arr, int N);
+
+/**
+ * Prints Array of Bytes
+ * 
+ * @param arr: Array of bytes
+ * @param N: Number of elements in the array
+ */
+void printArray_Bytes(uint8_t *arr, int N);
 
 /**
  * Prints a Matrix of Integers

@@ -1,6 +1,21 @@
 #include "utils.h"
 #include <climits>
 
+BinaryTreeNode::BinaryTreeNode(int v) {
+    data = v;
+    left = right = nullptr;
+}
+
+BinaryTree::BinaryTree(int* arr, int N){
+    root = new BinaryTreeNode(arr[0]);
+    BinaryTreeNode* l = root->left;
+    BinaryTreeNode* r = root->right;
+    for (int i = 0;i<N;i++) {
+        l = new BinaryTreeNode(arr[i*2+1]);
+        r = new BinaryTreeNode(arr[i*2+2]);
+    }
+}
+
 LListNode::LListNode(int v) {
     this->value = v;
     this->next = nullptr;
@@ -140,6 +155,16 @@ void printArray_Int(int* arr, int N) {
     for(int i=0; i<N;i++) {
         if (!i) std::cout << arr[i];
         else std::cout << "," << arr[i];
+    }
+    std::cout << "]";
+}
+
+void printArray_Bytes(uint8_t* arr, int N) {
+    std::cout << "[";
+    
+    for(int i=0; i<N;i++) {
+        if (!i) std::cout << "0x" << std::hex << arr[i] + 0;
+        else std::cout << ",0x" << std::hex << arr[i] + 0;
     }
     std::cout << "]";
 }
