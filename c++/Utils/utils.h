@@ -2,6 +2,8 @@
 #define __UtilsHelper__
 
 #include <iostream>
+#include <math.h>
+#include <queue>
 #include <vector>
 #include <unordered_map>
 
@@ -136,11 +138,18 @@ struct BinaryTreeNode {
     BinaryTreeNode(int v, int n);
 };
 
+
+
 /**
  * Binary Tree of Nodes
  */
 struct BinaryTree{
+    
+    
+    // private:
+    
 
+    // public:
     // root of the binary tree
     BinaryTreeNode* root;
 
@@ -162,9 +171,31 @@ struct BinaryTree{
     BinaryTree(std::vector<int> vec);
 
     /**
-     * Prints all nodes in the binary tree
+     * Add children
+     * 
+     * @param node : to add children to
+     * @param vec : vector of node values to store
+     * @param p : parent node index
+     * 
      */
-    void print();
+    void add_children_vec(BinaryTreeNode *node, std::vector<int> vec, int p = 0);
+
+    /**
+     * Add children
+     * 
+     * @param node : to add children to
+     * @param arr : int array of node values to store
+     * @param N : size of array
+     * @param p : parent node index
+     * 
+     */
+    void add_children_arr(BinaryTreeNode *node, int* arr, int N, int p = 0);
+
+    /**
+     * Prints all nodes in the binary tree
+     * following Breadth First Search
+     */
+    void printTree();
 };
 
 /**

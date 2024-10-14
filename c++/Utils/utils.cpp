@@ -8,13 +8,55 @@ BinaryTreeNode::BinaryTreeNode(int v) {
 
 BinaryTree::BinaryTree(int* arr, int N){
     root = new BinaryTreeNode(arr[0]);
-    BinaryTreeNode* l = root->left;
-    BinaryTreeNode* r = root->right;
-    for (int i = 0;i<N;i++) {
-        l = new BinaryTreeNode(arr[i*2+1]);
-        r = new BinaryTreeNode(arr[i*2+2]);
-    }
+    add_children_arr(root, arr, N);
 }
+
+BinaryTree::BinaryTree(std::vector<int> vec){
+    if (!vec.size()) return;
+    root = new BinaryTreeNode(vec[0]);
+    add_children_vec(root, vec);
+}
+
+void BinaryTree::add_children_arr(BinaryTreeNode* node, int* arr, int N, int p){
+    if (!N || p >= N) return;
+    int l = p*2+1;
+    int r = p*2+2;
+    if (l < N && arr[l] != INT_MAX) node->left = new BinaryTreeNode(arr[l]);
+    if (r < N && arr[r] != INT_MAX) node->right = new BinaryTreeNode(arr[r]);
+    add_children_arr(node->left, arr, l, N);
+    add_children_arr(node->right, arr, r, N);
+}
+
+void BinaryTree::add_children_vec(BinaryTreeNode* node, std::vector<int> vec, int p){
+    if (!vec.size() || p >= vec.size()) return;
+    
+    int l = p*2+1;
+    int r = p*2+2;
+
+    if (l < vec.size() && vec[l] != INT_MAX) node->left = new BinaryTreeNode(vec[l]);
+    if (r < vec.size() && vec[r] != INT_MAX) node->right = new BinaryTreeNode(vec[r]);
+    add_children_vec(node->left, vec, l);
+    add_children_vec(node->right, vec, r);
+}
+
+void BinaryTree::printTree(){
+    if(!root) return;
+    std::cout << "[ ";
+    std::queue<BinaryTreeNode*> q;
+    q.push(root);
+    
+    while(!q.empty()){
+        BinaryTreeNode* n = q.front();
+        std::printf("%d ", n->data);
+        q.pop();
+        if(n->left) q.push(n->left);
+        if(n->right) q.push(n->right);
+    }
+  
+    std::cout << "]";
+}
+
+// void BinaryTree::print(){BinaryTree::bfs(root);}
 
 LListNode::LListNode(int v) {
     this->value = v;
