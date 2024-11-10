@@ -123,6 +123,11 @@ struct BinaryTreeNode {
     BinaryTreeNode* right;
 
     /**
+     * Default constructor
+     */
+    BinaryTreeNode();
+
+    /**
      * Creates Binary Tree Node with initial value
      * 
      * @param v: integer value for the node to store
@@ -152,6 +157,11 @@ struct BinaryTree{
     // public:
     // root of the binary tree
     BinaryTreeNode* root;
+
+    /**
+     * Default constructor
+     */
+    BinaryTree();
 
     /**
      * Creates Binary Tree with array of values

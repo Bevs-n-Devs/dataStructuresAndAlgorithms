@@ -1,9 +1,18 @@
 #include "utils.h"
 #include <climits>
 
+
+BinaryTreeNode::BinaryTreeNode() {
+    
+}
+
 BinaryTreeNode::BinaryTreeNode(int v) {
     data = v;
     left = right = nullptr;
+}
+
+BinaryTree::BinaryTree(){
+    this->root = new BinaryTreeNode();
 }
 
 BinaryTree::BinaryTree(int* arr, int N){
@@ -47,13 +56,20 @@ void BinaryTree::printTree(){
     
     while(!q.empty()){
         BinaryTreeNode* n = q.front();
-        std::printf("%d ", n->data);
+        if (!n->data) {
+            if (n == root) std::printf("null", n->data);
+            else std::printf(", null", n->data);
+        }
+        else {
+            if (n == root) std::printf("%d", n->data);
+            else std::printf(", %d", n->data);
+        }
         q.pop();
         if(n->left) q.push(n->left);
         if(n->right) q.push(n->right);
     }
   
-    std::cout << "]";
+    std::cout << " ]";
 }
 
 // void BinaryTree::print(){BinaryTree::bfs(root);}
