@@ -216,6 +216,13 @@ struct BinaryTree{
 void printVector_Int(std::vector<int> v);
 
 /**
+ * Prints vector of Long Long's
+ * 
+ * @param v: Vector of integers
+ */
+void printVector_LngLng(std::vector<long long> v);
+
+/**
  * Prints vector of Characters
  * 
  * @param v: Vector of characters

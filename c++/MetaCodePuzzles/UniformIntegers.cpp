@@ -2,6 +2,16 @@
 #include <math.h>
 #include "../Utils/utils.h"
 
+/**
+ * A positive integer is considered uniform if all of its digits are equal. For example, 
+ * 222 is uniform, while 223 is not. Given two positive integers A and B, determine the 
+ * number of uniform integers between A and B, inclusive.
+ * 
+ * Constraints
+ *      * 1 ≤ A ≤ B ≤ 10^12
+ * 
+ */
+
 typedef struct{
     long long A, B, expectedResult;
 } Test;
