@@ -197,6 +197,16 @@ void printVector_Int(std::vector<int> v) {
     std::cout << "]";
 }
 
+void printVector_LngLng(std::vector<long long> v) {
+    std::cout << "[";
+    
+    for(int i=0; i<v.size();i++) {
+        if (!i) std::cout << v[i];
+        else std::cout << "," << v[i];
+    }
+    std::cout << "]";
+}
+
 void printVector_Str(std::vector<char*> v) {
     std::cout << "[";
     
