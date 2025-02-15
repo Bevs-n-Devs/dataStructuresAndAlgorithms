@@ -34,6 +34,7 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <limits.h>
 
 #define nullptr ((void*)0)
 
@@ -74,6 +75,56 @@ struct ListNode* createListNode(int val){
     node->val = val;
     node->next = nullptr;
     return node;
+}
+
+typedef struct Stack{
+    struct ListNode* top;
+    int height;
+    int capacity;
+}Stack;
+
+Stack* createStack(int capacity){
+    Stack* s = (Stack*)malloc(sizeof(Stack));
+    if (!s) {
+        printf("Failed to allocated memory\n");
+        return nullptr;
+    }
+
+    s->top = nullptr;
+    s->height = 0;
+    s->capacity = capacity;
+    return s;
+}
+
+bool empty(Stack* stack){
+    return !stack->height;
+}
+
+bool push(Stack* stack, int val){
+    if (stack->height == stack->capacity) return false;
+    
+    struct ListNode* node = createListNode(val);
+    if (!node){
+        printf("Failed to allocate memory\n");
+        return false;
+    }
+
+    if (!empty(stack)) node->next = stack->top;
+    
+    stack->top = node;
+    stack->height+=1;
+    return true;
+}
+
+int pop(Stack* stack){
+    if (empty(stack)) return INT_MIN;
+
+    int v = stack->top->val;
+    struct ListNode* n = stack->top;
+    stack->top = n->next;
+    free(n);
+    stack->height-=1;
+    return v;
 }
 
 /**
@@ -196,7 +247,6 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     if (!l2) return l1;
 
     // using reversal method 
-    // TODO: Work on approach without reversal
     l1 = reverseLL(l1);
     l2 = reverseLL(l2);
 
@@ -238,6 +288,53 @@ struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
         l3->next = prev;
     }
 
+    return l3;
+}
+
+/**
+ * Adds two numbers represented as two Linked Lists
+ * (Stack approach)
+ * 
+ * @param l1 : first value to add
+ * @param l2 : second value to add
+ * 
+ * @return linked list representing the result
+ */
+struct ListNode* addTwoNumbers_stack(struct ListNode* l1, struct ListNode* l2) {
+    if (!l1 & !l2) return nullptr;
+    if (!l1) return l2;
+    if (!l2) return l1;
+
+    bool carry = false;
+    struct ListNode* l3 = nullptr; 
+    struct ListNode* prev = nullptr; 
+    Stack* s1 = createStack(100);
+    Stack* s2 = createStack(100);
+    while (l1){
+        if(!push(s1,l1->val)) return false;
+        l1 = l1->next;
+    }
+    while (l2){
+        if(!push(s2,l2->val)) return false;
+        l2 = l2->next;
+    }
+    
+    while (!empty(s1) || !empty(s2)){
+        l3 = createListNode(-1);
+        l3->next = prev;
+        if (!empty(s1) && !empty(s2)) l3->val = pop(s1) + pop(s2) + carry;
+        else if (empty(s1)) l3->val = pop(s2) + carry;
+        else l3->val = pop(s1) + carry;
+
+        carry = l3->val / 10;
+        l3->val%=10;
+        prev = l3;
+    }
+
+    if (carry) {
+        l3 = createListNode(carry);
+        l3->next = prev;
+    }
     return l3;
 }
 
